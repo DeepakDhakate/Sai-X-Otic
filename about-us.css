@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Header Contact Section  */
@@ -24,28 +24,26 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.contact ul li{
+
+.contact ul li {
     color: white;
 }
+
 .list {
     display: flex;
     gap: 20px;
 }
 
-
-
-
-
-
-
-
+.contact .list li i {
+    font-size: 24px;
+}
 
 /* Navigation Bar Section  */
 
 .navbar {
     width: 100%;
     height: 150px;
-    background-color: #CCDEF1;
+    background-color: #ccdef1;
     color: #000;
     padding: 0px clamp(10px, 7vw, 120px);
     font-size: 16px;
@@ -54,16 +52,18 @@ body {
     align-items: center;
 }
 
-.navbar .logo{
-    width: 40%;
+.navbar .logo {
+    width: 30%;
 }
-.navbar .logo img{
-    width: 70%;
+
+.navbar .logo img {
+    width: 95%;
 }
 
 .menu {
     display: flex;
-    gap: 30px;
+    gap: 25px;
+    position: relative;
 }
 
 .menu li a {
@@ -81,6 +81,55 @@ body {
     font-weight: bold;
 }
 
+.navbar input {
+    color: black;
+}
+
+.navbar #search {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    outline: none;
+    /* position: relative; */
+}
+
+.navbar .search-icon {
+    position: absolute;
+    right: 85px;
+    top: 2px;
+    /* left: 20px; */
+    font-size: 20px;
+}
+
+.sign-in {
+    padding-top: 12px;
+    font-size: 15px;
+}
+
+.sign-in-icon {
+    padding: 0px 0px 10px 10px;
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 30px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 30px;
+    display: none;
+}
+
+/* Ending Of Navigation Bar */
+
+
+
+
 
 
 
@@ -97,10 +146,11 @@ body {
     height: 30vh;
     background-image: url("img/about\ us\ background.png");
     background-size: cover;
+    background-position: center;
     color: #000;
     padding: 150px clamp(10px, 7vw, 120px) 150px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .about-home-container h1 {
@@ -121,6 +171,9 @@ body {
 
 
 
+
+
+
 /* About Page - Director Section  */
 
 .about-director {
@@ -130,28 +183,27 @@ body {
     color: #000;
     padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
-.about-director h2 {
-    font-size: 32px;
+.about-director .about-heading {
+    font-size: clamp(24px, 5vw, 32px);
     font-weight: 400;
-    line-height: 50px;
+    line-height: clamp(35px, 5vw, 50px);
     /* letter-spacing: 0.2em; */
     color: #000;
     text-align: center;
-    padding: 0px 100px;
+    padding: 0px clamp(20px, 5vw, 100px);
+    margin: 20px auto;
 }
 
 .about-director-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 50px 100px;
+    padding: clamp(20px, 5vw, 50px) clamp(10px, 5vw, 100px);
 
-
-
-    border: 5px solid coral;
+    /* border: 5px solid coral; */
 }
 
 .about-director-data {
@@ -161,8 +213,29 @@ body {
     /* border: 5px solid coral; */
 }
 
-.about-director .about-director-img {
+.about-director-border {
+    position: absolute;
+    bottom: 3px;
+    left: -3px;
+    /* z-index: -999; */
+    width: 50%;
+    height: 100%;
+    border: 5px solid #004389;
+    border-right: none;
+}
 
+.about-director-border2 {
+    position: absolute;
+    bottom: 3px;
+    right: -3px;
+    /* z-index: -999; */
+    width: 50%;
+    height: 100%;
+    border: 5px solid #004389;
+    border-left: none;
+}
+
+.about-director .about-director-img {
     /* border: 2px solid black; */
 }
 
@@ -173,6 +246,7 @@ body {
 }
 
 .about-director .director-name {
+    /* width: clamp(250px, 5vw, 305px); */
     width: 305px;
     height: 80px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -186,7 +260,6 @@ body {
     bottom: 0px;
     top: 380px;
     right: 0px;
-
 }
 
 .about-director .d2 {
@@ -194,7 +267,6 @@ body {
     bottom: 0px;
     top: 380px;
     left: 0px;
-
 }
 
 .director-name h2 {
@@ -202,6 +274,8 @@ body {
     padding: 10px 20px 0px 20px;
     line-height: 1.2;
     text-align: left;
+    font-size: 28px;
+    font-weight: 500;
 }
 
 .director-name h3 {
@@ -219,21 +293,23 @@ body {
 
 
 
+
+
 /* About Page - Our Story Section */
 
 .our-story {
     width: 100%;
     height: auto;
-    padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
+    padding: 100px clamp(10px, 7vw, 120px) 50px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .our-story-heading {
-    border: 5px solid coral;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* border: 5px solid coral; */
 }
 
 .our-story-heading h1 {
@@ -249,11 +325,12 @@ body {
 }
 
 .our-story-container {
-    border: 5px solid coral;
+    margin: 30px auto;
+    /* border: 5px solid coral; */
 }
 
 .our-story-container p {
-    padding: 0px 90px;
+    padding: 0px clamp(20px, 5vw, 90px);
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -271,29 +348,33 @@ body {
 
 
 
+
+
+
+
 /* About Page - Mission Vision Section */
 
 .about-mission {
     width: 100%;
     height: auto;
-    padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
+    padding: 10px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .about-mission-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     padding: 0px 80px;
 
-    border: 5px solid coral;
+    /* border: 5px solid coral; */
 }
 
 .mission-content {
     width: 48%;
-    height: 420px;
+    height: 100%;
     padding: 15px 10px;
     border: 1px solid #888;
 }
@@ -304,9 +385,12 @@ body {
 }
 
 .mission-content p {
+    height: 100%;
     text-align: justify;
-
+    padding: 10px;
 }
+
+
 
 
 
@@ -324,14 +408,15 @@ body {
     height: auto;
     /* padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px); */
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
+
 .how-we-do-it-heading {
-    border: 5px solid coral;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 0px;
+    /* border: 5px solid coral; */
 }
 
 .how-we-do-it-heading h1 {
@@ -340,22 +425,24 @@ body {
     text-align: center;
     color: #004389;
     line-height: 1;
-    
 }
 
 .how-we-do-it-heading img {
     width: 150px;
 }
 
-.how-we-do-it-container img{
+.how-we-do-it-container img {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 80px;
+    padding: 0px clamp(10px 5vw, 80px);
 
-    border: 5px solid coral;
+    /* border: 5px solid coral; */
 }
+
+
+
 
 
 
@@ -371,17 +458,17 @@ body {
 .why-us {
     width: 100%;
     height: auto;
-    padding: 100px 0px;
+    padding: 100px 0px 0px 0px;
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .why-us-heading {
-    border: 5px solid coral;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 0px;
+    /* border: 5px solid coral; */
 }
 
 .why-us-heading h1 {
@@ -398,10 +485,10 @@ body {
 
 .why-us-container {
     width: 100%;
-    padding: 60px clamp(10px, 7vw, 120px) 60px clamp(10px, 7vw, 120px);
+    padding: 60px clamp(10px, 5vw, 120px) 60px clamp(10px, 5vw, 120px);
 
-    background: #E4EDF5;
-    border: 5px solid coral;
+    background: #e4edf5;
+    /* border: 5px solid coral; */
 }
 
 .why-us-container p {
@@ -410,17 +497,8 @@ body {
     line-height: 30px;
     text-align: center;
     letter-spacing: 0.02em;
-    padding: 0px 100px;
+    padding: 0px clamp(10px, 5vw, 100px);
 }
-
-
-
-
-
-
-
-
-
 
 /* About Page - Value for product Section */
 
@@ -429,9 +507,9 @@ body {
     height: auto;
     background-image: url("img/background.jpg");
     background-size: cover;
-    padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
+    padding: 10px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .about-value-container {
@@ -483,34 +561,24 @@ body {
     text-align: justify;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Product Contact US Section */
 
 .product-contact-us {
     width: 100%;
     height: auto;
-    background-color: #F6F7F9;
+    background-color: #f6f7f9;
     color: #000;
     padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .product-contact-us-heading {
-    border: 5px solid coral;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 0px;
+    /* border: 5px solid coral; */
 }
 
 .product-contact-us-heading h1 {
@@ -531,11 +599,11 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    border: 10px solid lightcoral;
+    /* border: 10px solid lightcoral; */
 }
 
 .product-contact-us-content img {
-    width: 100px;
+    width: 50px;
 }
 
 .product-contact-us-content {
@@ -546,8 +614,7 @@ body {
     padding: 12px;
     margin: 8px;
 
-
-    border: 2px solid royalblue;
+    border: 1px solid #999;
 }
 
 .product-contact-us-content h3 {
@@ -560,25 +627,16 @@ body {
     font-size: 14px;
 }
 
-
-
-
-
-
-
-
-
-
 /* Inquiry Form */
 
 .inquiry-form {
     width: 100%;
     height: auto;
-    background-color: #F6F7F9;
+    background-color: #f6f7f9;
     color: #000;
     padding: 50px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .inquiry-form h2 {
@@ -592,7 +650,7 @@ body {
     display: flex;
     justify-content: space-between;
 
-    border: 5px solid coral;
+    /* border: 5px solid coral; */
 }
 
 .inquiry-form-left {
@@ -615,7 +673,6 @@ body {
 
 .inquiry-form-right {
     width: 48%;
-
 }
 
 .inquiry-form-right textarea {
@@ -646,24 +703,16 @@ body {
     border: none;
 }
 
-
-
-
-
-
-
-
-
 /* Google Map Section */
 
 .google-map {
     width: 100%;
     height: 80vh;
-    background-color: #CCDEF1;
+    background-color: #ccdef1;
     color: #000;
     padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .google-map-container {
@@ -673,89 +722,127 @@ body {
     border: 5px solid darkred;
 }
 
+/* Small Laptops */
 
+@media screen and (max-width: 1000px) {
+    .contact {
+        display: none;
+    }
 
+    label {
+        display: block;
+    }
 
+    .navbar {
+        height: 100px;
+    }
 
+    .navbar .logo {
+        width: 35%;
+    }
 
+    .navbar .menu {
+        display: block;
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        background-color: #333;
+        width: 100%;
+        height: 100vh;
+        /* border-radius: 0%; */
+        text-align: center;
+        /* padding: 20px ; */
+        /* transform: translate(100px); */
+        transition: all 0.5s ease-in-out;
+    }
 
+    .navbar li {
+        padding: 10px 0px;
+    }
 
+    #check:checked~.menu {
+        /* left: 0px; */
+        right: 0px;
+        /* top: 80px; */
+        border-radius: 0%;
+    }
 
+    .about-home {
+        background-position: center right;
+    }
 
+    .about-director-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px;
+    }
 
+    .about-director .director-name {
+        width: clamp(290px, 5vw, 305px);
+    }
 
+    .about-director-data {
+        width: 80%;
+        margin: 40px 0px;
+    }
+    .about-mission-container {
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+    .mission-content{
+        width: 100%;
+        height: 100%;
+        margin: 30px 0px;
 
+    }
 
+    .corporate-uniform-inquiry-container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .corporate-uniform-inquiry-form {
+        width: 100%;
+        position: static;
+        bottom: 0px;
+    }
 
+    .corporate-uniform-inquiry-container .cost {
+        padding: 30px 0px;
+    }
 
+    .accordian-container {
+        width: 100%;
+    }
 
+    .corporate-uniform-para-container {
+        padding: 0px clamp(10px, 5vw, 20px);
+    }
 
+    .product-contact-us-container {
+        flex-direction: column;
+    }
 
+    .inquiry-form-container {
+        flex-direction: column;
+        /* display: block; */
+    }
 
+    .inquiry-form-left {
+        width: 95%;
+    }
 
-
-
-
-
-.container {
-    display: flex;
+    .inquiry-form-right {
+        width: 95%;
+    }
 }
-
-.box {
-    background-image: linear-gradient(purple, purple),
-        linear-gradient(purple, purple),
-        linear-gradient(purple, purple),
-        linear-gradient(purple, purple),
-        linear-gradient(steelblue, steelblue);
-    background-repeat: no-repeat;
-    background-size: 4px 50%, 50% 4px, 4px 50%, 50% 4px, calc(100% - 8px) calc(100% - 8px);
-    background-position: left bottom, left bottom, right top, right top, 4px 4px;
-
-    height: 160px;
-    width: 160px;
-    margin: 20px;
+@media screen and (max-width: 1000px) {
+    .about-director-data {
+        width: 100%;
+        
+    }
 }
-
-.gradient-border {}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -783,7 +870,6 @@ body {
     background-size: cover;
 }
 
-
 .footer-container {
     max-width: 1170px;
     /* background-color: #000; */
@@ -804,9 +890,11 @@ body {
     width: 25%;
     padding: 0 15px;
 }
-.footer-column img{
+
+.footer-column img {
     width: 90%;
 }
+
 .footer-column p {
     width: 60%;
     font-weight: 400;
@@ -863,9 +951,14 @@ a {
     background-color: #004389;
     color: white;
     padding: 6px 10px;
-    font-size: 25px;
+    font-size: 18px;
     margin-right: 10px;
+    /* margin: 20px; */
 }
+
+/* .footer-social-media ul li{
+    margin: 20px;
+} */
 
 .footer-column,
 .footer-contact-column,
@@ -875,7 +968,6 @@ a:hover {
     color: #303030;
     font-weight: 500;
 }
-
 
 .footer-social-media ul {
     display: flex;
@@ -888,7 +980,7 @@ a:hover {
     margin: 0px 20px;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
 
     .footer-column,
     .footer-contact-column {
@@ -896,16 +988,16 @@ a:hover {
         margin-bottom: 30px;
     }
 
-    .footer input[type=text] {
+    .footer input[type="text"] {
         width: 70%;
     }
 
-    .footer input[type=submit] {
+    .footer input[type="submit"] {
         width: 30%;
     }
 }
 
-@media(max-width: 574px) {
+@media (max-width: 574px) {
 
     .footer-column,
     .footer-contact-column {
@@ -914,15 +1006,7 @@ a:hover {
     }
 }
 
-
 /* Ending of Footer Section  */
-
-
-
-
-
-
-
 
 /* Copyright Section */
 
