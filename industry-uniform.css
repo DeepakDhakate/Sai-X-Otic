@@ -372,19 +372,21 @@ input::placeholder span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 120px 20px 80px;
-    background-color: whitesmoke;
+    padding: 20px 120px 20px clamp(10px 5vw, 80px);
+    background-color: white;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .accordian-container .content-box .content .light {
-    background-color: rgba(188, 213, 247, 0.5);
+    background-color: #C8D9EB4D;
     margin: 10px 0px;
 }
 
 .content-list h3 {
-    font-size: 32px;
+    font-size: clamp(16px, 3vw, 24px);
+    font-weight: 600;
 }
+
 
 .content-list img {
     width: 200px;
@@ -399,6 +401,7 @@ input::placeholder span {
     bottom: -10px;
 
 } */
+
 
 
 
@@ -464,6 +467,7 @@ input::placeholder span {
     align-items: center;
     padding: 12px;
     margin: 8px;
+    background-color: #fff;
 
     border: 1px solid #999;
 }
@@ -477,6 +481,20 @@ input::placeholder span {
     text-align: center;
     font-size: 14px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Inquiry Form */
 
@@ -519,7 +537,7 @@ input::placeholder span {
     margin: 12px 10px;
     border: 1px solid #999;
     outline: none;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #fff;
 }
 
 .inquiry-form-right {
@@ -535,7 +553,7 @@ input::placeholder span {
     margin: 12px 10px;
     border: 1px solid #999;
     outline: none;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #fff;
 }
 
 .inquiry-submit-btn {
@@ -554,6 +572,18 @@ input::placeholder span {
     border: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Google Map Section */
 
 .google-map {
@@ -561,7 +591,7 @@ input::placeholder span {
     height: 80vh;
     background-color: #ccdef1;
     color: #000;
-    padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
+    /* padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px); */
 
     /* border: 10px solid darkred; */
 }
@@ -569,8 +599,12 @@ input::placeholder span {
 .google-map-container {
     width: 100%;
     height: 100%;
-
-    border: 5px solid darkred;
+    
+    /* border: 5px solid darkred; */
+}
+.google-map iframe{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -613,17 +647,27 @@ input::placeholder span {
     .navbar {
         height: 100px;
     }
+    .search-icon{
+        display: none;
+    }
+    #search{
+        display: none;
+    }
 
     .navbar .logo {
         width: 35%;
     }
+    .navbar .logo img{
+        width: 120%;
+    }
+
 
     .navbar .menu {
         display: block;
         position: fixed;
         top: 100px;
         right: -100%;
-        background-color: #333;
+        background-color: #fff;
         width: 100%;
         height: 100vh;
         /* border-radius: 0%; */
@@ -685,6 +729,20 @@ input::placeholder span {
         width: 95%;
     }
 }
+
+@media screen and (max-width: 767px){
+    .content-list img {
+        width: 100px;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* Starting of Footer Section  */
 

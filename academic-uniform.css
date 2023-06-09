@@ -53,16 +53,17 @@ body {
 }
 
 .navbar .logo {
-    width: 40%;
+    width: 30%;
 }
 
 .navbar .logo img {
-    width: 70%;
+    width: 95%;
 }
 
 .menu {
     display: flex;
-    gap: 30px;
+    gap: 25px;
+    position: relative;
 }
 
 .menu li a {
@@ -80,6 +81,69 @@ body {
     font-weight: bold;
 }
 
+.navbar input {
+    color: black;
+}
+
+
+.navbar #search {
+    /* width: 180px; */
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    /* position: relative; */
+}
+
+.navbar .search-icon {
+    position: absolute;
+    right: 85px;
+    top: 2px;
+    /* left: 20px; */
+    font-size: 20px;
+    /* padding: 20px 20px 20px 0px; */
+}
+
+.sign-in {
+    padding-top: 12px;
+    font-size: 15px;
+}
+
+.sign-in-icon {
+    padding: 0px 0px 10px 10px;
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 30px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 30px;
+    display: none;
+}
+
+/* Ending Of Navigation Bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* About Page - Home Section */
 
 .about-home {
@@ -90,39 +154,55 @@ body {
     color: #000;
     padding: 80px clamp(10px, 7vw, 120px) 150px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
+
 .about-home-container h1 {
-    width: 380px;
+    width: 300px;
     font-weight: 700;
-    font-size: 48px;
+    font-size: clamp(36px, 5vw, 48px);
     line-height: 70px;
     letter-spacing: 0.2em;
     color: #303030;
-    margin-left: 50px;
+    padding-left: clamp(20px, 5vw, 50px);
     /* text-align: center; */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* INQUIRE FORM */
 
 .corporate-unifrom-inquiry {
     width: 100%;
-    height: 50vh;
+    height: auto;
     background-color: #f6f7f9;
     color: #000;
     padding: 50px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
     position: relative;
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .corporate-uniform-inquiry-container {
     width: 100%;
-    height: 10vh;
+    height: 40vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 
     /* border: 10px solid lightcoral; */
 }
@@ -131,10 +211,10 @@ body {
     width: 38%;
 
     /* border: 1px solid lightcoral; */
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     position: relative;
-    bottom: 60px;
+    bottom: 300px;
     /* top: 10px; */
     background-color: #fff;
 }
@@ -167,8 +247,8 @@ body {
     outline: none;
 }
 
-input::placeholder {
-    color: red;
+input::placeholder span {
+    color: black;
 }
 
 .corporate-uniform-inquiry-container .cost,
@@ -188,6 +268,19 @@ input::placeholder {
     padding: 0px 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Corporate Uniform Paragraph Section */
 
 .corporate-uniform-para {
@@ -196,13 +289,27 @@ input::placeholder {
     background-color: #f6f7f9;
     padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .corporate-uniform-para-container {
     padding: 0px 90px;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Corporate Uniform -- Uniforms Section */
 
@@ -212,7 +319,7 @@ input::placeholder {
     background-color: #f6f7f9;
     padding: 100px clamp(10px, 7vw, 120px) 50px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .uniforms-heading {
@@ -291,19 +398,21 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 120px 20px 80px;
-    background-color: whitesmoke;
+    padding: 20px 120px 20px clamp(10px 5vw, 80px);
+    background-color: white;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .accordian-container .content-box .content .light {
-    background-color: rgba(188, 213, 247, 0.5);
+    background-color: #C8D9EB4D;
     margin: 10px 0px;
 }
 
 .content-list h3 {
-    font-size: 32px;
+    font-size: clamp(16px, 3vw, 24px);
+    font-weight: 600;
 }
+
 
 .content-list img {
     width: 200px;
@@ -319,6 +428,19 @@ input::placeholder {
 
 } */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Product Contact US Section */
 
 .product-contact-us {
@@ -328,15 +450,15 @@ input::placeholder {
     color: #000;
     padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .product-contact-us-heading {
-    border: 5px solid coral;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 0px;
+    /* border: 5px solid coral; */
 }
 
 .product-contact-us-heading h1 {
@@ -357,7 +479,7 @@ input::placeholder {
     justify-content: space-between;
     align-items: center;
 
-    border: 10px solid lightcoral;
+    /* border: 10px solid lightcoral; */
 }
 
 .product-contact-us-content img {
@@ -371,8 +493,9 @@ input::placeholder {
     align-items: center;
     padding: 12px;
     margin: 8px;
+    background-color: #fff;
 
-    border: 2px solid royalblue;
+    border: 1px solid #999;
 }
 
 .product-contact-us-content h3 {
@@ -394,7 +517,7 @@ input::placeholder {
     color: #000;
     padding: 50px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .inquiry-form h2 {
@@ -408,7 +531,7 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
 
-    border: 5px solid coral;
+    /* border: 5px solid coral; */
 }
 
 .inquiry-form-left {
@@ -426,7 +549,7 @@ input::placeholder {
     margin: 12px 10px;
     border: 1px solid #999;
     outline: none;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #fff;
 }
 
 .inquiry-form-right {
@@ -442,7 +565,7 @@ input::placeholder {
     margin: 12px 10px;
     border: 1px solid #999;
     outline: none;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #fff;
 }
 
 .inquiry-submit-btn {
@@ -468,16 +591,148 @@ input::placeholder {
     height: 80vh;
     background-color: #ccdef1;
     color: #000;
-    padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
+    /* padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px); */
 
-    border: 10px solid darkred;
+    /* border: 10px solid darkred; */
 }
 
 .google-map-container {
     width: 100%;
     height: 100%;
+    
+    /* border: 5px solid darkred; */
+}
+.google-map iframe{
+    width: 100%;
+    height: 100%;
+}
 
-    border: 5px solid darkred;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small Laptops */
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        display: none;
+    }
+
+    label {
+        display: block;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+    .search-icon{
+        display: none;
+    }
+    #search{
+        display: none;
+    }
+
+    .navbar .logo {
+        width: 35%;
+    }
+    .navbar .logo img{
+        width: 120%;
+    }
+
+   
+
+    .navbar .menu {
+        display: block;
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+        /* border-radius: 0%; */
+        text-align: center;
+        /* padding: 20px ; */
+        /* transform: translate(100px); */
+        transition: all 0.5s ease-in-out;
+    }
+
+    .navbar li {
+        padding: 10px 0px;
+    }
+
+    #check:checked~.menu {
+        /* left: 0px; */
+        right: 0px;
+        /* top: 80px; */
+        border-radius: 0%;
+    }
+    .about-home {
+        background-position: center right;
+    }
+    .corporate-uniform-inquiry-container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .corporate-uniform-inquiry-form {
+        width: 100%;
+        position: static;
+        bottom: 0px;
+    }
+    .corporate-uniform-inquiry-container .cost{
+        padding: 30px 0px;
+    }
+    
+    .accordian-container {
+        width: 100%;
+    }
+    .corporate-uniform-para-container {
+        padding: 0px clamp(10px, 5vw, 20px);
+    }
+
+    .product-contact-us-container {
+        flex-direction: column;
+    }
+
+    .inquiry-form-container {
+        flex-direction: column;
+        /* display: block; */
+    }
+
+    .inquiry-form-left {
+        width: 95%;
+    }
+
+    .inquiry-form-right {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .content-list img {
+        width: 100px;
+    }
 }
 
 /* Starting of Footer Section  */
@@ -569,9 +824,14 @@ a {
     background-color: #004389;
     color: white;
     padding: 6px 10px;
-    font-size: 25px;
+    font-size: 18px;
     margin-right: 10px;
+    /* margin: 20px; */
 }
+
+/* .footer-social-media ul li{
+    margin: 20px;
+} */
 
 .footer-column,
 .footer-contact-column,

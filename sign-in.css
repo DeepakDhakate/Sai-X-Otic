@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Header Contact Section  */
@@ -33,24 +33,17 @@ body {
     display: flex;
     gap: 20px;
 }
-.contact .list li i{
+
+.contact .list li i {
     font-size: 24px;
 }
-
-
-
-
-
-
-
-
 
 /* Navigation Bar Section  */
 
 .navbar {
     width: 100%;
     height: 150px;
-    background-color: #CCDEF1;
+    background-color: #ccdef1;
     color: #000;
     padding: 0px clamp(10px, 7vw, 120px);
     font-size: 16px;
@@ -71,7 +64,6 @@ body {
     display: flex;
     gap: 25px;
     position: relative;
-
 }
 
 .menu li a {
@@ -89,7 +81,11 @@ body {
     font-weight: bold;
 }
 
-.navbar #search{
+.navbar input {
+    color: black;
+}
+
+.navbar #search {
     background-color: #fff;
     color: #000;
     padding: 10px;
@@ -98,30 +94,33 @@ body {
     outline: none;
     /* position: relative; */
 }
-.navbar .search-icon{
+
+.navbar .search-icon {
     position: absolute;
     right: 85px;
     top: 2px;
     /* left: 20px; */
     font-size: 20px;
 }
-.sign-in{
+
+.sign-in {
     padding-top: 12px;
     font-size: 15px;
 }
-.sign-in-icon{
+
+.sign-in-icon {
     padding: 0px 0px 10px 10px;
     position: absolute;
     bottom: 8px;
     right: 12px;
     font-size: 30px;
-
 }
 
-#check{
+#check {
     display: none;
 }
-label{
+
+label {
     font-size: 30px;
     display: none;
 }
@@ -134,7 +133,6 @@ label{
 
 
 
-/* About Page - Home Section */
 
 
 
@@ -143,275 +141,150 @@ label{
 
 
 
+/* Sign in section */
 
-
-
-
-/* Female Size Guide Section */
-
-.f-size-guide {
-    width: 100%;
-    margin: 50px auto 0px auto;
-    color: #000;
-    padding: clamp(10px, 7vw, 100px) clamp(10px, 7vw, 120px) clamp(10px, 7vw, 100px) clamp(10px, 7vw, 120px);
-    
-    /* border: 10px solid darkred; */
-}
-
-.f-size-guide-container img {
-    width: 100%;
-    /* height: clamp(80vh, 8vw, 130vh); */
-    /* height: 120vh; */
-    /* border: 10px solid coral; */
-    /* background-image: url("img/female-size-guide.png"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-
-
-
-
-
-
-
-
-/* Male Size Guide Section */
-
-.m-size-guide {
-    width: 100%;
-    /* height: 100vh; */
-    margin: 50px auto;
-    color: #000;
-    padding: 0px clamp(10px, 7vw, 120px) 0px clamp(10px, 7vw, 120px);
-    
-    /* border: 10px solid darkred; */
-}
-
-.m-size-guide-container img{
-    width: 100%;
-    /* height: 120vh; */
-    /* border: 10px solid coral; */
-    /* background-image: url("img/male-size-guide.png"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-}
-
-
-
-
-
-
-
-
-
-/* How to Measure Section */
-
-.measure {
-    width: 100%;
-    /* height: 100vh; */
-    margin: 50px auto;
-    color: #000;
-    padding: 0px clamp(10px, 7vw, 120px) 0px clamp(10px, 7vw, 120px);
-    
-    /* border: 10px solid darkred; */
-}
-
-.measure-container img{
-    width: 100%;
-    /* height: 120vh; */
-    /* border: 10px solid coral; */
-    /* background-image: url("img/how-to-measure.png"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Product Contact US Section */
-
-.product-contact-us {
+.sign-in-c{
     width: 100%;
     height: auto;
-    background-color: #F6F7F9;
-    color: #000;
-    padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
-
-    /* border: 10px solid darkred; */
-}
-
-.product-contact-us-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0px;
-    /* border: 5px solid coral; */
-}
-
-.product-contact-us-heading h1 {
-    font-size: 40px;
-    font-weight: 400;
-    text-align: center;
-    color: #004389;
-    line-height: 1;
-}
-
-.product-contact-us-heading img {
-    width: 150px;
-}
-
-.product-contact-us-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* flex-wrap: wrap; */
-
-    /* border: 10px solid lightcoral; */
-}
-
-.product-contact-us-content img {
-    width: 50px;
-}
-
-.product-contact-us-content {
-    width: 265px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 12px;
-    margin: 18px 0px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    border: 1px solid #999;
-}
-
-.product-contact-us-content h3 {
-    padding: 12px 0px;
-    font-weight: 500;
-}
-
-.product-contact-us-content p {
-    text-align: center;
-    font-size: 14px;
-}
-
-
-
-
-
-
-
-
-
-
-/* Inquiry Form */
-
-.inquiry-form {
-    width: 100%;
-    height: auto;
-    background-color: #F6F7F9;
-    color: #000;
+    background-color: #f6f7f9;
     padding: 50px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
+    /* position: relative; */
 
     /* border: 10px solid darkred; */
 }
 
-.inquiry-form h2 {
-    text-align: center;
-    color: #004389;
-    padding-bottom: 50px;
-}
-
-.inquiry-form-container {
+.sign-in-container{
     width: 100%;
+    height: auto;
     display: flex;
-    justify-content: space-between;
-
-    /* border: 5px solid coral; */
+    justify-content: space-around;
+    align-items: center;
+    
+    /* border: 5px solid royalblue; */
 }
 
-.inquiry-form-left {
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.login-container{
+    width: 40%;
+    height: 600px;
+    padding: 30px;
+    background-color: #ccdef1;
+    /* position: relative; */
+    border: 2px solid #004389;
 }
 
-.inquiry-form-left input {
-    width: 98%;
-    padding: 12px 15px;
+.sign-in-container h1{
+    text-align: center;  
+    font-size: 28px;
+    font-weight: 500;
+    color: #004389;
+}
+.sign-in-container .para{
+    text-align: center;  
     font-size: 16px;
-    border-radius: 5px;
-    margin: 12px 10px;
-    border: 1px solid #999;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.2);
+    margin: 30px 0px 0px 0px;
+}
+.sign-in-container p{
+    text-align: center;  
 }
 
-.inquiry-form-right {
-    width: 48%;
-
+.login-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.inquiry-form-right textarea {
-    width: 98%;
-    height: 90%;
-    padding: 12px 15px;
-    font-size: 18px;
-    border-radius: 5px;
-    margin: 12px 10px;
-    border: 1px solid #999;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.2);
+.sign-in-container input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px 10px;
 }
 
-.inquiry-submit-btn {
-    margin: 30px auto;
-    width: 160px;
-    /* border: 5px solid; */
-}
-
-.inquiry-submit-btn input {
-    font-size: 18px;
-    padding: 18px 55px;
+.sign-in-container button{
+    display: block;
     color: white;
+    font-size: 18px;
     background-color: #004389;
-    border-radius: 5px;
+    padding: 10px 50px;
     outline: none;
     border: none;
+    margin: 20px;
+    /* position: relative; */
+    /* top: 50px; */
+
+    
 }
+
+.registration-container{
+    width: 40%;
+    height: 600px;
+    padding: 30px;
+    margin: 30px 0px;
+    background-color: #ccdef1;
+    /* position: relative;   */
+    border: 2px solid #004389;
+}
+/* .registration-container h1{
+    text-align: center;  
+} */
+.registration-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registration-container .para{
+    text-align: center;  
+    font-size: 16px;
+    margin: 55px 0px 0px 0px;
+}
+
+
+/* Ending of Sign in section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -426,7 +299,7 @@ label{
 .google-map {
     width: 100%;
     height: 80vh;
-    background-color: #CCDEF1;
+    background-color: #ccdef1;
     color: #000;
     padding: 100px clamp(10px, 7vw, 120px) 100px clamp(10px, 7vw, 120px);
 
@@ -463,21 +336,9 @@ label{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Small Laptops */
 
-@media  screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .contact {
         display: none;
     }
@@ -503,6 +364,7 @@ label{
         width: 120%;
     }
 
+
     .navbar .menu {
         display: block;
         position: fixed;
@@ -515,7 +377,7 @@ label{
         text-align: center;
         /* padding: 20px ; */
         /* transform: translate(100px); */
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .navbar li {
@@ -528,67 +390,16 @@ label{
         /* top: 80px; */
         border-radius: 0%;
     }
-
-    .f-size-guide{
-        /* padding: 50px clamp(10px, 7vw, 120px) 50px clamp(10px, 7vw, 120px); */
-        /* height: 100vh; */
-    }
-    .f-size-guide-container{
-        background-position: top;
-    }
-    .m-size-guide{
-        /* padding: 50px clamp(10px, 7vw, 120px) 50px clamp(10px, 7vw, 120px); */
-        /* height: 100vh; */
-    }
-    .m-size-guide-container{
-        background-position: top;
-    }
-    .measure{
-        /* padding: 50px clamp(10px, 7vw, 120px) 50px clamp(10px, 7vw, 120px); */
-        /* height: 100vh; */
-    }
-    .measure-container{
-        background-position: top;
-    }
-    .product-contact-us-container{
+    .sign-in-container{
         flex-direction: column;
     }
-    .inquiry-form-container{
-        flex-direction: column;
-        /* display: block; */
+    .login-container{
+        width: 100%;
     }
-    .inquiry-form-left{
-        width: 95%;
-    }
-    .inquiry-form-right{
-        width: 95%;
+    .registration-container{
+        width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Starting of Footer Section  */
 
@@ -597,7 +408,6 @@ label{
     background: url(img/bottom\ nav\ background.png);
     background-size: cover;
 }
-
 
 .footer-container {
     max-width: 1170px;
@@ -684,6 +494,7 @@ a {
     margin-right: 10px;
     /* margin: 20px; */
 }
+
 /* .footer-social-media ul li{
     margin: 20px;
 } */
@@ -697,7 +508,6 @@ a:hover {
     font-weight: 500;
 }
 
-
 .footer-social-media ul {
     display: flex;
     justify-content: flex-start;
@@ -709,7 +519,7 @@ a:hover {
     margin: 0px 20px;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
 
     .footer-column,
     .footer-contact-column {
@@ -717,16 +527,16 @@ a:hover {
         margin-bottom: 30px;
     }
 
-    .footer input[type=text] {
+    .footer input[type="text"] {
         width: 70%;
     }
 
-    .footer input[type=submit] {
+    .footer input[type="submit"] {
         width: 30%;
     }
 }
 
-@media(max-width: 574px) {
+@media (max-width: 574px) {
 
     .footer-column,
     .footer-contact-column {
@@ -735,15 +545,7 @@ a:hover {
     }
 }
 
-
 /* Ending of Footer Section  */
-
-
-
-
-
-
-
 
 /* Copyright Section */
 
